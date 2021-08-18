@@ -5,45 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Portfolio - Hayden</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
-      <a class="navbar-brand" href="#">Hayden Haun</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav d-flex justify-content-end">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >About me <span class="sr-only">(current)</span>
-            </a>
+  <body>
+    <nav class="d-flex justify-content-center bg-success text-light">
+      <div class="d-flex flex-column align-items-center">
+        <h1 class="ms-3 mt-2">Hayden Haun</h1>
+        <ul class="d-flex flex-row text-light">
+          <li><a href="#aboutMe" class="text-light">About Me</a></li>
+          <li class="ms-3"><a href="#links" class="text-light">Links</a></li>
+          <li class="ms-3">
+            <a href="#projects" class="text-light">Projects</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Resume</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
+          <li class="ms-3"><a href="#" class="text-light">Contact Info</a></li>
         </ul>
       </div>
     </nav>
+
+    <main class="container-fluid pt-2">
+      <section
+        class="
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+          border
+          col-md-6
+          offset-md-3
+          bg-light
+        "
+        id="aboutMe"
+      >
+        <!-- <h2 class="aboutMe pt-3 text-center">About Me</h2> -->
+        <img
+          src="./assets/images/Picture1.jpg"
+          class="img-fluid pt-2 mainImg"
+          alt="Contact picture"
+        />
+        <p class="col-8 text-center pt-2">
+          Hello! <br />
+          Welcome to my portfolio <br />
+          My name is Hayden and I am looking for full-time work as a software
+          developer.
+        </p>
+      </section>
+
+      <div class="container-fluid bg-light pt-2 mt-2 pb-2 mb-2" id="links">
+        <div class="row justify-content-around">
+          <div class="col-4 text-center">
+            <h2>GitHub</h2>
+            <a href="https://github.com/Hayden-Haun" target="no_blank">
+              <img
+                src="./assets/images/GitHub.png"
+                class="img-fluid pt-2 linkImg"
+                alt="Contact picture"
+              />
+            </a>
+          </div>
+          <div class="col-4 text-center text-primary">
+            <h2>LinkedIn</h2>
+            <a
+              href="https://www.linkedin.com/in/hayden-haun/"
+              target="no_blank"
+            >
+              <img
+                src="./assets/images/LI-In-Bug.png"
+                class="img-fluid pt-2 linkImg"
+                alt="Contact picture"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="
+          d-flex
+          flex-column
+          justify-content-between
+          align-items-center
+          pt-2
+        "
+      >
+        <div class="row pt-4 bg-light" id="projects">
+          <h2 class="text-center pb-3">Projects</h2>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Venu</h5>
+                <p class="card-text">The simple event finding website</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <p class="card-text">
+                  An application to check the weather and forecast
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

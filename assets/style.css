@@ -1,0 +1,19 @@
+ul {
+  list-style-type: none;
+}
+
+.mainImg {
+  max-height: 500px;
+  height: 90%;
+  width: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.linkImg {
+  max-height: 64px;
+  height: 90%;
+  width: auto;
+}
