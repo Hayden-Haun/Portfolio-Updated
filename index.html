@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfolio - Hayden</title>
+    <title>Hayden Haun's Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,43 +25,58 @@
           <li class="ms-3">
             <a href="#projects" class="text-light">Projects</a>
           </li>
-          <li class="ms-3"><a href="#" class="text-light">Contact Info</a></li>
+          <li class="ms-3">
+            <a href="#links" class="text-light">Contact Info</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <main class="container-fluid pt-2">
+    <main class="container-fluid pt-2 bg-light">
       <section
         class="
           d-flex
           flex-column
           align-items-center
           justify-content-center
-          border
           col-md-6
           offset-md-3
           bg-light
         "
         id="aboutMe"
       >
-        <!-- <h2 class="aboutMe pt-3 text-center">About Me</h2> -->
         <img
           src="./assets/images/Picture1.jpg"
           class="img-fluid pt-2 mainImg"
           alt="Contact picture"
         />
         <p class="col-8 text-center pt-2">
-          Hello! <br />
-          Welcome to my portfolio <br />
+          <strong>Hello!</strong> <br />
           My name is Hayden and I am looking for full-time work as a software
-          developer.
+          developer. <br />
         </p>
+        <div class="col-4 text-center">
+          <a
+            href="#"
+            class="btn btn-success btn-lg active mt-4"
+            role="button"
+            aria-pressed="true"
+            >Resume</a
+          >
+        </div>
       </section>
 
-      <div class="container-fluid bg-light pt-2 mt-2 pb-2 mb-2" id="links">
+      <div class="container-fluid bg-light pt-2 mt-4 pb-2 mb-2" id="links">
         <div class="row justify-content-around">
           <div class="col-4 text-center">
-            <h2>GitHub</h2>
+            <h2>
+              <a
+                href="https://github.com/Hayden-Haun"
+                target="no_blank"
+                class="text-dark"
+                >GitHub</a
+              >
+            </h2>
             <a href="https://github.com/Hayden-Haun" target="no_blank">
               <img
                 src="./assets/images/GitHub.png"
@@ -70,8 +85,15 @@
               />
             </a>
           </div>
+
           <div class="col-4 text-center text-primary">
-            <h2>LinkedIn</h2>
+            <h2>
+              <a
+                href="https://www.linkedin.com/in/hayden-haun/"
+                target="no_blank"
+                >LinkedIn</a
+              >
+            </h2>
             <a
               href="https://www.linkedin.com/in/hayden-haun/"
               target="no_blank"
@@ -90,50 +112,86 @@
         class="
           d-flex
           flex-column
-          justify-content-between
+          justify-content-around
           align-items-center
           pt-2
+          ms-5
         "
+        id="projects"
       >
-        <div class="row pt-4 bg-light" id="projects">
+        <div class="row pt-4 bg-light">
           <h2 class="text-center pb-3">Projects</h2>
 
-          <div class="col">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col mt-2 mb-2">
+            <div class="card text-center" style="width: 25rem">
               <div class="card-body">
                 <h5 class="card-title">Venu</h5>
                 <p class="card-text">The simple event finding website</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-success">Go somewhere</a>
               </div>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col mt-2 mb-2">
+            <div class="card text-center" style="width: 25rem">
               <div class="card-body">
                 <h5 class="card-title">Weather Dashboard</h5>
                 <p class="card-text">
                   An application to check the weather and forecast
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-success">Go somewhere</a>
               </div>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col mt-2 mb-2">
+            <div class="card text-center" style="width: 25rem">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Placeholder #1</h5>
+                <p class="card-text">Reserved area for additional projects</p>
+                <a href="#" class="btn btn-success">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mt-2 mb-2">
+            <div class="card text-center" style="width: 25rem">
+              <div class="card-body">
+                <h5 class="card-title">Placeholder #2</h5>
+                <p class="card-text">Reserved area for additional projects</p>
+                <a href="#" class="btn btn-success">Go somewhere</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <footer
+        class="
+          container-fluid
+          d-flex
+          justify-content-around
+          align-items-center
+          bg-success
+          pt-3
+          pb-3
+          mt-4
+          text-light text-center
+        "
+        id="contact"
+      >
+        <span>Denver, Colorado </span>
+        <span
+          ><a href="mailto:haydenhaun@gmail.com" class="text-light"
+            >haydenhaun@gmail.com</a
+          >
+        </span>
+        <span
+          ><a href="mailto:haydenhaun@gmail.com" class="text-light"
+            >303-718-1311</a
+          >
+        </span>
+      </footer>
     </main>
   </body>
 </html>
