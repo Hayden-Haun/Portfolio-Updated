@@ -10,4 +10,8 @@ https://github.com/Hayden-Haun/Portfolio-Updated
 
 A basic portfolio to showcase my experience and projects. This contains links to a downloadable pdf of my resume, links to GitHub & LinkedIn profiles, and multiple coding project. Each coding project contains buttons to the deployed application and the repository.
 
+## Technologies used:
+
+HTMl, CSS, BOOTSTRAP
+
 ![Screenshot](./assets/images/screenshot.png "Screenshot")
