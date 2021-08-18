@@ -17,3 +17,9 @@ a:link {
   height: 90%;
   width: auto;
 }
+
+.projectImg {
+  max-height: 100px;
+  height: 90%;
+  width: auto;
+}
