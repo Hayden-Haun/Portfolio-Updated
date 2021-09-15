@@ -23,3 +23,7 @@ a:link {
   height: 90%;
   width: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
