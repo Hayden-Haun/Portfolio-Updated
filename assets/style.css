@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 ul {
   list-style-type: none;
 }
@@ -61,6 +65,11 @@ html {
 
 .curvedCorners {
   border-radius: 2%;
-  border-color: green;
+  border-color: rgba(108, 50, 88);
   border-style: solid;
+}
+
+.bg-purp {
+  background: rgba(108, 50, 88);
+  border-color: honeydew;
 }
