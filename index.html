@@ -27,7 +27,7 @@
             <a href="#projects" class="text-light">Projects</a>
           </li>
           <li class="ms-3">
-            <a href="#links" class="text-light">Contact Info</a>
+            <a href="#contactMe" class="text-light">Contact Info</a>
           </li>
         </ul>
       </div>
@@ -46,59 +46,56 @@
           extraFadeLight
           col-8
           curvedCorners
+          d-flex
+          flex-row
+          justify-content-center
+          align-items-center
         "
         id="links"
       >
-        <div class="row justify-content-between">
-          <div class="col-4 text-center">
-            <h2>
-              <a
-                href="https://github.com/Hayden-Haun"
-                target="no_blank"
-                class="text-dark"
-                >GitHub</a
-              >
-            </h2>
-            <a href="https://github.com/Hayden-Haun" target="no_blank">
-              <img
-                src="./assets/images/GitHub.png"
-                class="img-fluid pt-2 linkImg"
-                alt="Contact picture"
-              />
-            </a>
-          </div>
-
-          <div class="col-4 text-center">
+        <div class="col-4 text-center ms-5 me-5">
+          <h2>
             <a
-              href="./assets/HaydenHaun_Resume_2021.pdf"
-              class="btn btn-success btn-lg active mt-4"
-              role="button"
-              aria-pressed="true"
+              href="https://github.com/Hayden-Haun"
               target="no_blank"
-              download
-              >Resume</a
+              class="text-dark"
+              >GitHub</a
             >
-          </div>
+          </h2>
+          <a href="https://github.com/Hayden-Haun" target="no_blank">
+            <img
+              src="./assets/images/GitHub.png"
+              class="img-fluid pt-2 linkImg"
+              alt="Contact picture"
+            />
+          </a>
+        </div>
 
-          <div class="col-4 text-center text-light">
-            <h2>
-              <a
-                href="https://www.linkedin.com/in/hayden-haun/"
-                target="no_blank"
-                >LinkedIn</a
-              >
-            </h2>
-            <a
-              href="https://www.linkedin.com/in/hayden-haun/"
-              target="no_blank"
+        <div class="col-4 text-center ms-5 me-5">
+          <a
+            href="./assets/HaydenHaun_Resume_2021.pdf"
+            class="btn btn-success btn-lg active mt-4"
+            role="button"
+            aria-pressed="true"
+            target="no_blank"
+            download
+            >Resume</a
+          >
+        </div>
+
+        <div class="col-4 text-center text-light ms-5 me-5">
+          <h2>
+            <a href="https://www.linkedin.com/in/hayden-haun/" target="no_blank"
+              >LinkedIn</a
             >
-              <img
-                src="./assets/images/LI-In-Bug.png"
-                class="img-fluid pt-2 linkImg"
-                alt="Contact picture"
-              />
-            </a>
-          </div>
+          </h2>
+          <a href="https://www.linkedin.com/in/hayden-haun/" target="no_blank">
+            <img
+              src="./assets/images/LI-In-Bug.png"
+              class="img-fluid pt-2 linkImg"
+              alt="Contact picture"
+            />
+          </a>
         </div>
       </div>
 
@@ -175,7 +172,7 @@
 
               <div class="d-flex justify-content-center">
                 <div class="carousel-inner carousel-custom">
-                  <div class="carousel-item">
+                  <div class="carousel-item active">
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -191,16 +188,35 @@
                             alt="Contact picture"
                           />
                           <p class="card-text mt-2">
-                            A full stack app to review campsites
+                            <strong
+                              >A Full Stack Application to review
+                              campsites</strong
+                            >
+                            <br />
+                            <br />
+                            <strong>Features:</strong> Express.js Server, User
+                            Authentication, Persistent database<br />
+                            <br />
+                            <strong>Technoglogies:</strong> JavaScript,
+                            Bootstrap, mySQL, Express.js, Node.js, Cloudinary,
+                            Handlebars, JAWSDB, Heroku, JavaScript, HTML, CSS
                           </p>
-                          <a href="#" class="btn btn-success">Live App</a>
-                          <a href="#" class="btn btn-success">Repository</a>
+                          <a
+                            href="https://git-outside.herokuapp.com/"
+                            class="btn btn-success"
+                            >Live App</a
+                          >
+                          <a
+                            href="https://github.com/Hayden-Haun/Git-Outside"
+                            class="btn btn-success"
+                            >Repository</a
+                          >
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- VENU -->
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -216,7 +232,13 @@
                             alt="Contact picture"
                           />
                           <p class="card-text mt-2">
-                            The simple event finding website
+                            <strong>An event finding website</strong> <br />
+                            <br />
+                            <strong>Features:</strong> Third-Party API Data from
+                            SeatGeek & Google Maps, Local Storage <br />
+                            <br />
+                            <strong>Technoglogies:</strong> JavaScript,
+                            Bulma.io, Moment.js, jQuery, HTML, CSS
                           </p>
                           <a
                             href="https://nickwojt.github.io/venu/"
@@ -348,11 +370,11 @@
         justify-content-around
         align-items-center
         bg-success
-        pt-3
-        pb-3
+        pt-4
+        pb-4
         text-light text-center
       "
-      id="contact"
+      id="contactMe"
     >
       <span>Denver, Colorado </span>
       <span
