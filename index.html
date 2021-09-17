@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <div></div>
     <nav class="d-flex justify-content-center bg-success text-light">
       <div class="d-flex flex-column align-items-center">
         <h1 class="ms-3 mt-2">Hayden Haun</h1>
@@ -31,45 +32,13 @@
         </ul>
       </div>
     </nav>
-
-    <main class="container-fluid pt-4 bg-light">
-      <section
-        class="
-          d-flex
-          flex-column
-          align-items-center
-          justify-content-center
-          col-md-6
-          offset-md-3
-          bg-light
-        "
-        id="aboutMe"
+    <!-- RESUME / GITHUB / LINKED-IN -->
+    <main class="container-fluid pt-4 backgroundImage">
+      <div
+        class="container-fluid pt-2 mt-4 pb-2 mb-2 mt-5 extraFadeLight col-8"
+        id="links"
       >
-        <img
-          src="./assets/images/Picture1.jpg"
-          class="img-fluid pt-2 mainImg"
-          alt="Contact picture"
-        />
-        <p class="col-8 text-center pt-2">
-          <strong>Hello!</strong> <br />
-          My name is Hayden and I am looking for full-time work as a software
-          developer. <br />
-        </p>
-        <div class="col-4 text-center">
-          <a
-            href="./assets/HaydenHaun_Resume_2021.pdf"
-            class="btn btn-success btn-lg active mt-4"
-            role="button"
-            aria-pressed="true"
-            target="no_blank"
-            download
-            >Resume</a
-          >
-        </div>
-      </section>
-
-      <div class="container-fluid bg-light pt-2 mt-4 pb-2 mb-2" id="links">
-        <div class="row justify-content-around">
+        <div class="row justify-content-between">
           <div class="col-4 text-center">
             <h2>
               <a
@@ -88,7 +57,19 @@
             </a>
           </div>
 
-          <div class="col-4 text-center text-primary">
+          <div class="col-4 text-center">
+            <a
+              href="./assets/HaydenHaun_Resume_2021.pdf"
+              class="btn btn-success btn-lg active mt-4"
+              role="button"
+              aria-pressed="true"
+              target="no_blank"
+              download
+              >Resume</a
+            >
+          </div>
+
+          <div class="col-4 text-center text-light">
             <h2>
               <a
                 href="https://www.linkedin.com/in/hayden-haun/"
@@ -110,123 +91,243 @@
         </div>
       </div>
 
+      <section
+        class="
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+          col-md-6
+          offset-md-3
+        "
+        id="aboutMe"
+      >
+        <img
+          src="./assets/images/Picture1.jpg"
+          class="img-fluid pt-2 mainImg"
+          alt="Contact picture"
+        />
+        <p class="col-8 text-center text-light pt-2">
+          <strong>Hello!</strong> <br />
+          My name is Hayden and I am looking for full-time work as a software
+          developer. <br />
+        </p>
+      </section>
+
       <div
         class="
           d-flex
-          flex-row
+          flex-column
           justify-content-center
           align-items-center
           pt-2
           ms-5
+          me-5
         "
         id="projects"
       >
-        <div class="row pt-4 bg-light">
+        <div
+          class="
+            row
+            pt-4
+            extraFadeLight
+            justify-content-center
+            align-items-center
+          "
+        >
           <h2 class="text-center pb-3">Projects</h2>
 
-          <div class="col mt-2 mb-2">
-            <div class="card text-center" style="width: 25rem">
-              <div class="card-body">
-                <h5 class="card-title">Git Outside</h5>
-                <img
-                  src="./assets/images/gitoutside.png"
-                  class="img-fluid pt-2 projectImg card-img-top"
-                  alt="Contact picture"
-                />
-                <p class="card-text mt-2">
-                  A full stack app to view and review campsites
-                </p>
-                √
-                <a href="#" class="btn btn-success">Live App</a>
-                <a href="#" class="btn btn-success">Repository</a>
-              </div>
-            </div>
-          </div>
+          <!-- CAROUSEL OF PROJECTS  -->
+          <div class="">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <!-- GIT OUTSIDE -->
 
-          <div class="col mt-2 mb-2">
-            <div class="card text-center" style="width: 25rem">
-              <div class="card-body">
-                <h5 class="card-title">Venu</h5>
-                <img
-                  src="./assets/images/venu.png"
-                  class="img-fluid pt-2 projectImg card-img-top"
-                  alt="Contact picture"
-                />
-                <p class="card-text mt-2">The simple event finding website</p>
-                <a
-                  href="https://nickwojt.github.io/venu/"
-                  class="btn btn-success"
-                  target="no_blank"
-                  >Live App</a
-                >
-                <a
-                  href="https://github.com/nickwojt/venu"
-                  class="btn btn-success"
-                  target="no_blank"
-                  >Repository</a
-                >
+              <div class="d-flex justify-content-center">
+                <div class="carousel-inner carousel-custom">
+                  <div class="carousel-item">
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="card extraFadeLight text-center"
+                        style="width: 20rem; height: 30rem"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title">Git Outside</h5>
+                          <img
+                            src="./assets/images/gitoutside.png"
+                            class="img-fluid pt-2 projectImg card-img-top"
+                            alt="Contact picture"
+                          />
+                          <p class="card-text mt-2">
+                            A full stack app to review campsites
+                          </p>
+                          <a href="#" class="btn btn-success">Live App</a>
+                          <a href="#" class="btn btn-success">Repository</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- VENU -->
+                  <div class="carousel-item active">
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="card extraFadeLight text-center"
+                        style="width: 20rem; height: 30rem"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title">Venu</h5>
+                          <img
+                            src="./assets/images/venu.png"
+                            class="img-fluid pt-2 projectImg card-img-top"
+                            alt="Contact picture"
+                          />
+                          <p class="card-text mt-2">
+                            The simple event finding website
+                          </p>
+                          <a
+                            href="https://nickwojt.github.io/venu/"
+                            class="btn btn-success"
+                            target="no_blank"
+                            >Live App</a
+                          >
+                          <a
+                            href="https://github.com/nickwojt/venu"
+                            class="btn btn-success"
+                            target="no_blank"
+                            >Repository</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- WEATHER DASHBOARD -->
+                  <div class="carousel-item">
+                    <div
+                      class="
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <div
+                        class="card extraFadeLight text-center"
+                        style="width: 20rem; height: 30rem"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title">Weather Dashboard</h5>
+                          <img
+                            src="./assets/images/weather.png"
+                            class="img-fluid pt-2 projectImg card-img-top"
+                            alt="Contact picture"
+                          />
+                          <p class="card-text mt-2">
+                            An application to check the weather and forecast
+                          </p>
+                          <a
+                            href="https://hayden-haun.github.io/WeatherDashboard-HaydenHaun/"
+                            class="btn btn-success"
+                            target="no_blank"
+                            >Live App</a
+                          >
+                          <a
+                            href="https://github.com/Hayden-Haun/WeatherDashboard-HaydenHaun"
+                            class="btn btn-success"
+                            target="no_blank"
+                            >Repository</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- PASSWORD GENERATOR -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="text-center"
+                        style="width: 20rem; height: 30rem"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title">Password Generator</h5>
+                          <img
+                            src="./assets/images/password.png"
+                            class="img-fluid pt-2 projectImg card-img-top"
+                            alt="Contact picture"
+                          />
+                          <p class="card-text mt-2">
+                            Select critera to create a random password
+                          </p>
+                          <a
+                            href="https://hayden-haun.github.io/PASSWORD-GENERATOR-HAYDENHAUN/"
+                            class="btn btn-success"
+                            target="no_blank"
+                            >Live App</a
+                          >
+                          <a
+                            href="https://github.com/Hayden-Haun/PASSWORD-GENERATOR-HAYDENHAUN"
+                            class="btn btn-success"
+                            target="no_blank"
+                            >Repository</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col mt-2 mb-2">
-            <div class="card text-center" style="width: 25rem">
-              <div class="card-body">
-                <h5 class="card-title">Weather Dashboard</h5>
-                <img
-                  src="./assets/images/weather.png"
-                  class="img-fluid pt-2 projectImg card-img-top"
-                  alt="Contact picture"
-                />
-                <p class="card-text mt-2">
-                  An application to check the weather and forecast
-                </p>
-                <a
-                  href="https://hayden-haun.github.io/WeatherDashboard-HaydenHaun/"
-                  class="btn btn-success"
-                  target="no_blank"
-                  >Live App</a
-                >
-                <a
-                  href="https://github.com/Hayden-Haun/WeatherDashboard-HaydenHaun"
-                  class="btn btn-success"
-                  target="no_blank"
-                  >Repository</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="col mt-2 mb-2">
-            <div class="card text-center" style="width: 25rem">
-              <div class="card-body">
-                <h5 class="card-title">Password Generator</h5>
-                <img
-                  src="./assets/images/password.png"
-                  class="img-fluid pt-2 projectImg card-img-top"
-                  alt="Contact picture"
-                />
-                <p class="card-text mt-2">
-                  Select critera to create a random password
-                </p>
-                <a
-                  href="https://hayden-haun.github.io/PASSWORD-GENERATOR-HAYDENHAUN/"
-                  class="btn btn-success"
-                  target="no_blank"
-                  >Live App</a
-                >
-                <a
-                  href="https://github.com/Hayden-Haun/PASSWORD-GENERATOR-HAYDENHAUN"
-                  class="btn btn-success"
-                  target="no_blank"
-                  >Repository</a
-                >
-              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="false"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- FOOTER -->
       <footer
         class="
           container-fluid
@@ -255,4 +356,20 @@
       </footer>
     </main>
   </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
