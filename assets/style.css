@@ -3,7 +3,7 @@ ul {
 }
 
 .mainImg {
-  max-height: 300px;
+  max-height: 350px;
   height: 100%;
   width: auto;
 }
@@ -61,6 +61,6 @@ html {
 
 .curvedCorners {
   border-radius: 2%;
+  border-color: green;
   border-style: solid;
-  padding: 25px;
 }
