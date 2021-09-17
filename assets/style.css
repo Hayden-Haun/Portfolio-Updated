@@ -58,3 +58,9 @@ html {
   width: auto;
   height: 200px;
 }
+
+.curvedCorners {
+  border-radius: 2%;
+  border-style: solid;
+  padding: 25px;
+}
