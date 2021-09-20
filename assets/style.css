@@ -73,3 +73,32 @@ html {
   background: rgba(108, 50, 88);
   border-color: honeydew;
 }
+
+.linksContainer {
+  margin: auto;
+}
+
+.customSizing {
+  width: 90vw;
+  max-width: 800px;
+}
+
+.carouselCustomPrev {
+  position: static;
+  color: black;
+  background-color: blue;
+}
+
+.responsiveCarouselBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsiveCarouselBtn {
+    display: inline;
+  }
+
+  .lowBtn {
+    display: none;
+  }
+}
