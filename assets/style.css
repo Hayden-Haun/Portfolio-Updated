@@ -33,10 +33,10 @@ html {
 }
 
 .backgroundImage {
-  background-image: url("./images/flatirons-bg.jpg");
+  background-image: url("./images/flatirons-bg-updated.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center;
+  background-position: top;
   max-width: 100%;
   /* height: 1600px; */
 }
@@ -141,4 +141,8 @@ h2 {
 
 strong {
   font-style: italic;
+}
+
+.eheshgsergsLight {
+  background: rgba(15, 11, 36, 0.952);
 }
