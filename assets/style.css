@@ -7,8 +7,8 @@ ul {
 }
 
 .mainImg {
-  max-height: 350px;
-  height: 100%;
+  max-height: 340px;
+  height: 110%;
   width: auto;
 }
 
@@ -45,13 +45,17 @@ html {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.extraFadeLight2 {
+  background: rgba(255, 255, 255, 0.75);
+}
+
 .linksWidth {
   width: 2.5rem;
 }
 
 .carousel-custom {
   width: 800px;
-  height: 500px;
+  height: 400px;
 }
 
 .bg-mandlebrot {
@@ -67,6 +71,14 @@ html {
   border-radius: 2%;
   border-color: rgba(108, 50, 88);
   border-style: solid;
+  border-width: 5px;
+}
+
+.curvedCorners2 {
+  border-radius: 2%;
+  border-color: rgb(55, 105, 32);
+  border-style: solid;
+  border-width: 5px;
 }
 
 .bg-purp {
@@ -86,11 +98,23 @@ html {
 .carouselCustomPrev {
   position: static;
   color: black;
-  background-color: blue;
 }
 
 .responsiveCarouselBtn {
   display: none;
+}
+
+.card-maxW {
+  max-width: 500px;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+h2 {
+  color: rgba(108, 50, 88);
+  font-weight: 800;
 }
 
 @media only screen and (max-width: 800px) {
@@ -101,4 +125,16 @@ html {
   .lowBtn {
     display: none;
   }
+
+  .navUL {
+    flex-direction: column !important;
+  }
+
+  .navLI {
+    margin: auto;
+  }
+}
+
+.resumeBtn {
+  background-color: rgb(55, 105, 32);
 }
